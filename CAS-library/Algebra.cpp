@@ -7,9 +7,6 @@ Algebra::Algebra()
  quadratic_formula_negative(0.0), Algebra_option(0)
 {	}
 //================
-Algebra::~Algebra()
-=default;
-//================
 void Algebra::print_Algebra_options()
 {
 	std::cout<<"\tWELCOME TO THE ALGEBRA LIBRARY"<<'\n'
@@ -45,8 +42,12 @@ void Algebra::Algebra_result()
 		case 1:
 		{
 			polyRoots();
+			Algebra::~Algebra();
 			break;
 		}
 		default: {std::cerr<<"ALGEBRA ERROR: YOU ENTERED INVALID DATA"<<std::endl; break;}
 	}
 }
+//=================
+Algebra::~Algebra()
+{	}

@@ -1,6 +1,7 @@
 #include "CAS-library/CAS.h"
 #include "CAS-library/Electric.h"
 #include "CAS-library/Vector2D.h"
+#include "CAS-library/Algebra.h"
 #include <iostream>
 //===================
 int32_t main()

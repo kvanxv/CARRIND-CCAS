@@ -7,9 +7,6 @@ Vector2D::Vector2D()
  initial_coordinate_X(0.0), initial_coordinate_Y(0.0), ending_coordinate_X(0.0), ending_coordinate_Y(0.0),
  Vector2D_user_option(0)
 {	}
-//==================
-Vector2D::~Vector2D()
-=default;
 //===================
 void Vector2D::print_Vector2D_options()
 {
@@ -48,11 +45,12 @@ void Vector2D::calculate_X_and_Y_component_Vector()
 		case 1:
 		{
 			calculate_vectorComponents_coordinate();
+			Vector2D::~Vector2D();
 			break;
 		}
             default:
             {
-                std::cout<<"FUNCTION ERROR: INVALID DATA ENTERED"<<std::endl;
+				std::cerr<<"FUNCTION ERROR: INVALID DATA ENTERED"<<std::endl;
                 break;
             }
 	}
@@ -70,8 +68,11 @@ void Vector2D::Vector2D_result()
 		}
 		default:
 		{
-			std::cout<<"VECTOR ERROR: YOU ENTERED INVALID DATA"<<std::endl;
+			std::cerr<<"VECTOR ERROR: YOU ENTERED INVALID DATA"<<std::endl;
 			break;
 		}
 	}
 }
+//============
+Vector2D::~Vector2D()
+{	}

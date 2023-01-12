@@ -8,9 +8,6 @@ Electric::Electric()
 :Coulomb_force(0.0), object_electric_charge_1(0.0), object_electric_charge_2(0.0),
  displacementVector_between_charges(0.0), Electric_option(0)
 {	}
-//===================
-Electric::~Electric()
-=default;
 //==================
 void Electric::print_Electric_options()
 {
@@ -40,9 +37,12 @@ void Electric::Electric_result()
 		case 1:
 		{
 			calculate_electric_force();
+			Electric::~Electric();
 			break;
 		}
 		default: {std::cerr<<"ELECTRIC ERROR: YOU ENTERED INVALID DATA"<<std::endl;}
 	}
 }
-
+//======================
+Electric::~Electric()
+{	}

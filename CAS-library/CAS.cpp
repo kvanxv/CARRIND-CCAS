@@ -8,16 +8,13 @@ CAS::CAS()
 : radian_mode(false), degree_mode(true), comma_symbol(','), i_symbol('i'), j_symbol('j'), CAS_user_option(-1)
 {	}
 //=========================
-CAS::~CAS()
-=default;
-//=========================
 void CAS::print_CCAS_option()
 {
 	std::cout<<"\tWELCOME TO THE CARRIND COMPUTER ALGEBRA SYSTEM"<<std::endl;
 	std::cout<<"* WHICH SYSTEM WOULD YOU LIKE TO ENTER?"<<'\n'
 			 <<"[0] CHANGE ANGLE MODE"<<'\n'
 			 <<"[1] ELECTRIC"<<'\n'
-			 <<"[2] VECTOR"<<'\n'
+			 <<"[2] VECTOR2D"<<'\n'
 			 <<"[3] ALGEBRA"<<std::endl;
 	std::cin>>CAS_user_option;
 }
@@ -92,3 +89,6 @@ void CAS::result()
         }
 	}
 }
+//====================
+CAS::~CAS()
+{	}
