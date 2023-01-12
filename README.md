@@ -9,4 +9,4 @@ COMMAND 1: git clone https://github.com/kvanxv/CARRIND-CCAS.git\
 COMMAND 2: cd CARRIND-CCAS\
 COMMAND 3: cmake build CMakeLists.txt\
 COMMAND 4: make\
-COMMAND 5: ./CARRIND-CCAS
+COMMAND 5: ./CARRIND-CCAS\
