@@ -9,6 +9,7 @@ public:
 	~Vector3D();
 	void print_Vector3D_options();
 	void calculate_Vector3D_endPoints();
+	void calculate_VectorMagnitude();
 	void Vector3D_result();
 private:
 	double a_component;
@@ -21,5 +22,7 @@ private:
 	double Vector_terminal_point_X;
 	double Vector_terminal_point_Y;
 	double Vector_terminal_point_Z;
+
+	double Vector_magnitude;
 	int Vector3D_option;
 };
