@@ -19,7 +19,7 @@ void Vector3D::calculate_Vector3D_endPoints()
 	std::cout<<"Enter starting point coordinates:"<<'\n';
 	std::cin>>Vector_startingPoint_X>>comma_symbol>>Vector_startingPoint_Y>>comma_symbol>>Vector_startingPoint_Z;
 
-	std::cout<<"<a,b,c>"<<'n';
+	std::cout<<"<a,b,c>"<<'\n';
 
 	std::cout<<"Enter vector in component form"<<std::endl;
 	std::cin>>left_vector_component_symbol>>a_component>>comma_symbol>>b_component>>comma_symbol>>c_component>>right_vector_component_symbol;
