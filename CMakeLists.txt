@@ -14,4 +14,6 @@ add_executable(CARRIND_CCAS
         CAS-library/Vector2D.h
 		CAS-library/Algebra.cpp
 		CAS-library/Algebra.h
+		CAS-library/Vector3D.cpp
+		CAS-library/Vector3D.h
         CAS_main.cpp)

@@ -20,6 +20,8 @@ public:
 	char comma_symbol;
 	char i_symbol;
 	char j_symbol;
+	char left_vector_component_symbol;
+	char right_vector_component_symbol;
 private:
 	bool radian_mode;
 	bool degree_mode;

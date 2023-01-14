@@ -2,10 +2,12 @@
 #include "Electric.h"
 #include "Vector2D.h"
 #include "Algebra.h"
+#include "Vector3D.h"
 #include <iostream>
 //=========================
 CAS::CAS()
-: radian_mode(false), degree_mode(true), comma_symbol(','), i_symbol('i'), j_symbol('j'), CAS_user_option(-1)
+:radian_mode(false), degree_mode(true), comma_symbol(','), i_symbol('i'), j_symbol('j'), left_vector_component_symbol('<'), 
+ right_vector_component_symbol('>'),CAS_user_option(-1)
 {	}
 //=========================
 void CAS::print_CCAS_option()
@@ -14,8 +16,9 @@ void CAS::print_CCAS_option()
 	std::cout<<"* WHICH SYSTEM WOULD YOU LIKE TO ENTER?"<<'\n'
 			 <<"[0] CHANGE ANGLE MODE"<<'\n'
 			 <<"[1] ELECTRIC"<<'\n'
-			 <<"[2] VECTOR2D"<<'\n'
-			 <<"[3] ALGEBRA"<<std::endl;
+			 <<"[2] VECTOR 2D"<<'\n'
+			 <<"[3] ALGEBRA"<<'\n'
+			 <<"[4] VECTOR 3D"<<std::endl;
 	std::cin>>CAS_user_option;
 }
 //=========================
@@ -80,6 +83,13 @@ void CAS::result()
 			Algebra Algebra_app;
 			Algebra_app.print_Algebra_options();
 			Algebra_app.Algebra_result();
+			break;
+		}
+		case 4:
+		{
+			Vector3D Vector3D_app;
+			Vector3D_app.print_Vector3D_options();
+			Vector3D_app.Vector3D_result();
 			break;
 		}
 		default:
